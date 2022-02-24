@@ -1,4 +1,5 @@
 {
   "extends": "@tsconfig/create-react-app/tsconfig.json",
-  "compilerOptions": { "sourceMap": true, "noEmit": false }
+  "compilerOptions": { "sourceMap": true, "noEmit": false },
+  "include": ["src/**/*"]
 }

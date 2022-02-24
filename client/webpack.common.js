@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.tsx'),
@@ -38,6 +39,7 @@ module.exports = {
       favicon: path.resolve(__dirname, 'public', 'favicon.ico'),
       hash: true,
     }),
+    new ESLintPlugin({ extensions: ['ts', 'tsx'], fix: true }),
   ],
   output: {
     filename: 'bundle.js',
