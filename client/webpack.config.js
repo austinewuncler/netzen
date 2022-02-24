@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -38,6 +39,7 @@ module.exports = {
       favicon: path.resolve(__dirname, 'public', 'favicon.ico'),
       hash: true,
     }),
+    new ReactRefreshWebpackPlugin(),
   ],
   output: {
     filename: 'main.js',
