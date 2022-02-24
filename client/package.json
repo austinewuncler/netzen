@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "Austine Were <austinewuncler@gmail.com> (https://github.com/austinewuncler)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
 }
