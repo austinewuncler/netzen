@@ -6,7 +6,7 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    client: { overlay: { errors: true, warnings: false } },
+    client: { overlay: { errors: true, warnings: false }, logging: 'warn' },
     hot: true,
     open: true,
     port: 3000,
